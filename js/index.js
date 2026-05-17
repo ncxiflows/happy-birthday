@@ -84,3 +84,25 @@ new Typed("#typed", {
 })
 }
 
+$("#play-photo-music").click(function () {
+  const customMusic = $("#custom-music")[0]
+  const bgMusic = $(".song")[0]
+
+  if (customMusic.paused) {
+    if (bgMusic) {
+      bgMusic.pause()
+    }
+
+    customMusic.play()
+    $(this).addClass("music-playing")
+  } else {
+    customMusic.pause()
+
+    if (bgMusic) {
+      bgMusic.play()
+    }
+
+    $(this).removeClass("music-playing")
+  }
+})
+
