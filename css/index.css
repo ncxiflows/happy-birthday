@@ -107,3 +107,28 @@ img {
         transform: rotateZ(-10deg);
     }
 }
+
+
+.single-photo-section {
+  max-width: 420px;
+  margin: 36px auto 28px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.birthday-photo {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 8px solid #fff8f2;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.photo-caption {
+  margin-top: 14px;
+  color: #8a4b4b;
+  font-size: 16px;
+  line-height: 1.8;
+}
