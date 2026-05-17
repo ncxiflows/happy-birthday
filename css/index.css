@@ -156,3 +156,25 @@ img {
     margin-bottom: -30px;
   }
 }
+
+$("#play-custom-music").click(function () {
+  const customMusic = $("#custom-music")[0]
+  const bgMusic = $(".song")[0]
+
+  if (customMusic.paused) {
+    if (bgMusic) {
+      bgMusic.pause()
+    }
+
+    customMusic.play()
+    $(this).text("暂停这首歌")
+  } else {
+    customMusic.pause()
+
+    if (bgMusic) {
+      bgMusic.play()
+    }
+
+    $(this).text("点一下听一首歌")
+  }
+})
