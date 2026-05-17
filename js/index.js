@@ -31,7 +31,7 @@ function birthdayCountdown() {
     // 生日当天关闭倒计时，解锁按钮支持可点击
     if (now.format("YYYY-MM-DD") === birthday.format("YYYY-MM-DD")) {
         clearInterval(intervalId)
-        $btn.text("来吧，展示")
+        $btn.text("而这世界全在你手里")
         $btn.prop("disabled", false)
         return
     }
