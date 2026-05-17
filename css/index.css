@@ -236,9 +236,28 @@ img {
     margin-top: 16px !important;
   }
 
-  #iflowers {
-    font-size: 10px !important;
-    transform: none !important;
-    margin-bottom: 8px !important;
+/* 让点击音乐的区域就是照片本身 */
+.single-photo-section {
+  position: relative !important;
+  text-align: center !important;
+}
+
+#play-photo-music {
+  display: block !important;
+  margin: 0 auto !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 20 !important;
+  touch-action: manipulation;
+}
+
+/* 防止其他动画元素盖住照片 */
+.brith-balloon,
+.snowflake,
+#brith-confetti {
+  pointer-events: none !important;
+}
+
   }
 }
