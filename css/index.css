@@ -69,10 +69,26 @@ img {
     text-shadow: 0 0 5px #fff, 0 0 7px #fff;
 }
 
+/* 放大祝福语 + 华文楷体 */
 .birth-greeting-word {
-    font-size: 25px;
-    color: #C4515C;
+  font-size: 32px;
+  font-family: "STKaiti", "华文楷体", "KaiTi", "楷体", serif;
+  line-height: 1.8;
+  font-weight: 500;
 }
+
+/* 手机端适配 */
+@media (max-width: 576px) {
+  .birth-greeting-word {
+    font-size: 25px;
+  }
+
+  #iflowers {
+    transform: scale(0.68);
+    margin-bottom: -30px;
+  }
+}
+
 
 .birth-inline-people-name {
     text-transform: capitalize;
@@ -137,25 +153,7 @@ img {
 }
 
 
-/* 放大祝福语 + 华文楷体 */
-.birth-greeting-word {
-  font-size: 32px;
-  font-family: "STKaiti", "华文楷体", "KaiTi", "楷体", serif;
-  line-height: 1.8;
-  font-weight: 500;
-}
 
-/* 手机端适配 */
-@media (max-width: 576px) {
-  .birth-greeting-word {
-    font-size: 25px;
-  }
-
-  #iflowers {
-    transform: scale(0.68);
-    margin-bottom: -30px;
-  }
-}
 
 $("#play-custom-music").click(function () {
   const customMusic = $("#custom-music")[0]
