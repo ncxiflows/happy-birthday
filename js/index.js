@@ -78,7 +78,7 @@ new Typed("#typed", {
   stringsElement: "#greeting-word",
   typeSpeed: 90,
   backSpeed: 45,
-  backDelay: 1800,
+  backDelay: 2400,
   startDelay: 500,
   loop: true,
 })
