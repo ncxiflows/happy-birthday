@@ -70,7 +70,7 @@ img {
 }
 
 /* 放大祝福语 + 华文楷体 */
-.greeting-word {
+.birth-greeting-word {
   font-size: 32px;
   font-family: "STKaiti", "华文楷体", "KaiTi", "楷体", serif;
   line-height: 1.8;
@@ -84,7 +84,7 @@ img {
   }
 
   #iflowers {
-    transform: scale(0.68);
+    transform: scale(0.5);
     margin-bottom: -30px;
   }
 }
