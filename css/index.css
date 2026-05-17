@@ -69,23 +69,47 @@ img {
     text-shadow: 0 0 5px #fff, 0 0 7px #fff;
 }
 
-/* 放大祝福语 + 华文楷体 */
+
+/* 祝福语：和 FLOWERS、cake.gif 拉开距离 + 华文楷体 */
 .birth-greeting-word {
+  margin-top: 28px;
+  margin-bottom: 28px;
   font-size: 32px;
   font-family: "STKaiti", "华文楷体", "KaiTi", "楷体", serif;
   line-height: 1.8;
   font-weight: 500;
 }
 
+/* 蛋糕和祝福语之间留一点距离 */
+.birth-cake {
+  display: block;
+  margin: 18px auto 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+/* 页面最下方 ©iflowers 字号调小 */
+#iflowers {
+  font-size: 12px;
+  transform: none;
+}
+
 /* 手机端适配 */
 @media (max-width: 576px) {
   .birth-greeting-word {
+    margin-top: 22px;
+    margin-bottom: 22px;
     font-size: 25px;
   }
 
   #iflowers {
-    transform: scale(0.5);
-    margin-bottom: -30px;
+    font-size: 10px;
+    transform: none;
+    margin-bottom: 8px;
+  }
+
+  .birth-cake {
+    margin-top: 14px;
   }
 }
 
@@ -159,3 +183,7 @@ img {
   font-family: "STKaiti", "华文楷体", "KaiTi", "楷体", serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
