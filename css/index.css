@@ -88,11 +88,6 @@ img {
   left: 50%;
 }
 
-/* 页面最下方 ©iflowers 字号调小 */
-#iflowers {
-  font-size: 12px;
-  transform: none;
-}
 
 /* 手机端适配 */
 @media (max-width: 576px) {
