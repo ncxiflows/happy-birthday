@@ -73,11 +73,14 @@ function pageRender() {
     $main.fadeIn("slow")
     $(".song")[0].play()
     $(".brith-balloon").animate({ top: -500 }, 8000)
-    new Typed("#typed", {
-        stringsElement: "#greeting-word",
-        typeSpeed: 50,
-        backSpeed: 25,
-        loop: true,
-    })
+
+new Typed("#typed", {
+  stringsElement: "#greeting-word",
+  typeSpeed: 90,
+  backSpeed: 45,
+  backDelay: 1800,
+  startDelay: 500,
+  loop: true,
+})
 }
 
