@@ -110,25 +110,28 @@ img {
 
 
 .single-photo-section {
-  max-width: 420px;
-  margin: 36px auto 28px;
+  max-width: 340px;
+  margin: 28px auto 24px;
   padding: 0 20px;
   text-align: center;
 }
 
 .birthday-photo {
   width: 100%;
-  max-width: 360px;
+  max-width: 280px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 24px;
-  border: 8px solid #fff8f2;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  border-radius: 22px;
+  border: 7px solid #fff8f2;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.16);
 }
 
-.photo-caption {
-  margin-top: 14px;
-  color: #8a4b4b;
-  font-size: 16px;
-  line-height: 1.8;
+@media (max-width: 576px) {
+  .single-photo-section {
+    max-width: 360px;
+  }
+
+  .birthday-photo {
+    max-width: 300px;
+  }
 }
